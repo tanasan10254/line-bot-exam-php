@@ -59,7 +59,7 @@ if (strpos($_msg, 'สอน') !== false) {
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
      $br = "\r\n";
     $text1 = "เอกสารศูนย์บริหารจัดการน้ำ";
-    $link1 = "https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing";
+    $link1 = "https://sites.google.com/view/army2water/home";
     $arrPostData['messages'][0]['type'] = "text";     
     $arrPostData['messages'][0]['text'] = $text1.$br.$link1;
 
