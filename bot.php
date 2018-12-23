@@ -57,8 +57,7 @@ if (strpos($_msg, 'สอน') !== false) {
   }else{
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-    $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'ระบบจัดเก็บเอกสาร';
+    $arrPostData['messages'][0]['type'] = "text";    
     $arrPostData['messages'][0]['file'] = 'https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing';
   }
 }
