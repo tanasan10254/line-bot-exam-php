@@ -61,7 +61,7 @@ if (strpos($_msg, 'สอน') !== false) {
     $text1 = "เอกสารศูนย์บริหารจัดการน้ำ";
     $link1 = "https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing";
     $arrPostData['messages'][0]['type'] = "text";     
-    $arrPostData['messages'][0]['text'] = '$text1.$br.$link1';
+    $arrPostData['messages'][0]['text'] = $text1.$br.$link1;
 
   }
 }
