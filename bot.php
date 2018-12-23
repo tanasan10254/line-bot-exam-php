@@ -58,7 +58,9 @@ if (strpos($_msg, 'สอน') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";    
-    $arrPostData['messages'][0]['text'] = 'https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing';
+    $arrPostData['messages'][0]['text'] = 'ไฟล์';
+    $arrPostData['messages'][0]['type'] = "file";    
+    $arrPostData['messages'][0]['file'] = 'https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing';
   }
 }
 
