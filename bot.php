@@ -59,7 +59,7 @@ if (strpos($_msg, 'สอน') !== false) {
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
     $arrPostData['messages'][0]['text'] = 'ระบบจัดเก็บเอกสาร';
-    $arrPostData['messages'][0]['text'] = 'https://2ascom.com';
+    $arrPostData['messages'][0]['file'] = 'https://2ascom.com';
   }
 }
 
