@@ -57,10 +57,11 @@ if (strpos($_msg, 'สอน') !== false) {
   }else{
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-    $arrPostData['messages'][0]['type'] = "text";  
-    $br = "\r\n";
+     $br = "\r\n";
+    $text1 = "เอกสารศูนย์บริหารจัดการน้ำ";
     $link1 = "https://drive.google.com/drive/folders/1kkK1umiwByGeymITrVsXftK-Nk5yASPN?usp=sharing";
-    $arrPostData['messages'][0]['text'] = 'เอกสารศูนย์บริหารจัดการน้ำ.$br.1.gggg.$br.$link1';
+    $arrPostData['messages'][0]['type'] = "text";     
+    $arrPostData['messages'][0]['text'] = '$text1.$br.$link1';
 
   }
 }
